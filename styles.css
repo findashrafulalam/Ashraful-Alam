@@ -397,7 +397,7 @@ footer {
   }
 
   .nav-links {
-    display: none; /* Hide on small screens or toggle with JS if expanded */
+    display: none;
   }
 
   .hero-avatar {
