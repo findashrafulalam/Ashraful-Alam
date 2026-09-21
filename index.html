@@ -1,468 +1,188 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Ashraful Alam | Portfolio & QA Specialist</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- External Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashraful Alam - Portfolio</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header class="header">
-        <nav class="nav-container">
-            <a href="#hero" class="brand flex-align">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" 
-                     alt="Md. Ashraful Alam Profile Logo" 
-                     class="brand-logo-img"
-                     onerror="this.onerror=null; this.src='https://placehold.co/100x100/0284c7/ffffff?text=AA';">
-                <div class="brand-info">
-                    <span class="brand-name">Md. Ashraful Alam</span>
-                    <span class="brand-title">QA Specialist & Tech Enthusiast</span>
-                </div>
-            </a>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Ashraful Alam" class="logo-img">
+        <span>Ashraful Alam</span>
+      </a>
 
-            <div class="nav-links">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-            <div class="header-actions">
-                <!-- Dark / Light Mode Switch Button -->
-                <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme">
-                    <i id="themeIcon" class="fas fa-sun"></i>
-                </button>
+      <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <i id="themeIcon" class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </header>
 
-                <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm flex-align">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub Profile</span>
-                </a>
-            </div>
-        </nav>
-    </header>
-
-    <section id="hero" class="hero-section">
-        <div class="hero-bg-glow glow-1"></div>
-        <div class="hero-bg-glow glow-2"></div>
-
-        <div class="container hero-content text-center">
-            <div class="badge">
-                <span class="badge-dot"></span>
-                Quality Assurance (IPQC) Specialist & Hardware Tech
-            </div>
-
-            <h1 class="hero-title">
-                Hi, I'm <span class="gradient-text">Md. Ashraful Alam</span>
-            </h1>
-
-            <p class="hero-subtitle">
-                Quality Assurance Officer specialized in Household & Personal Care (HHPC) manufacturing. Combining standard quality compliance, computer hardware expertise, and technical problem-solving.
-            </p>
-
-            <div class="hero-cta flex-center">
-                <a href="#projects" class="btn btn-gradient">
-                    Explore Projects <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#contact" class="btn btn-outline">
-                    Get in Touch
-                </a>
-            </div>
-
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <span class="metric-value font-mono color-cyan">HHPC</span>
-                    <span class="metric-label">QA & IPQC Focus</span>
-                </div>
-                <div class="metric-card">
-                    <span class="metric-value font-mono color-teal">M.S. & B.S.</span>
-                    <span class="metric-label">Psychology Graduate</span>
-                </div>
-                <div class="metric-card">
-                    <span class="metric-value font-mono color-indigo">100%</span>
-                    <span class="metric-label">Quality Compliance</span>
-                </div>
-                <div class="metric-card">
-                    <span class="metric-value font-mono color-cyan">PC Tech</span>
-                    <span class="metric-label">Hardware Specialist</span>
-                </div>
-            </div>
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <span class="badge">Quality Assurance Officer & Tech Enthusiast</span>
+        <h1>Hi, I'm <span class="gradient-text">Ashraful Alam</span></h1>
+        <p>A Quality Assurance professional in Household & Personal Care (HHPC) production, with a deep passion for web development, system optimization, and technical solutions.</p>
+        <div class="btn-group">
+          <a href="#contact" class="btn-primary"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
+          <a href="#experience" class="btn-secondary"><i class="fa-solid fa-briefcase"></i> View Work</a>
         </div>
+      </div>
+      <div class="hero-avatar-wrapper">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Ashraful Alam Profile" class="hero-avatar">
+      </div>
     </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <div class="section-tag">
-                <span class="tag-line"></span>
-                <span class="tag-text">Biography</span>
-            </div>
-            <h2 class="section-title">About Me</h2>
-
-            <div class="grid grid-2">
-                <div class="card leading-relaxed">
-                    <p>
-                        Hello! I am <strong>Md. Ashraful Alam</strong>, a dedicated Quality Assurance & Control professional working in Household & Personal Care (HHPC) manufacturing. My daily focus revolves around implementing strict Quality Management Systems (QMS), executing In-Process Quality Control (IPQC), and maintaining standard operating procedures (SOP).
-                    </p>
-                    <p class="mt-4">
-                        Alongside my career in quality management, I hold an academic background in <strong>Psychology (Honors & Master's)</strong>, giving me a unique perspective on human factors, attention to detail, process optimization, and workplace problem-solving.
-                    </p>
-                    <p class="mt-4">
-                        I am also a passionate tech enthusiast, computer hardware builder, and digital content creator. I enjoy assembling custom PC configurations, troubleshooting complex hardware issues, and documenting technical workflows.
-                    </p>
-
-                    <div class="checklist-grid mt-6">
-                        <div class="check-item"><i class="fas fa-check-circle color-cyan"></i> IPQC & Line Inspection</div>
-                        <div class="check-item"><i class="fas fa-check-circle color-cyan"></i> QMS & SOP Compliance</div>
-                        <div class="check-item"><i class="fas fa-check-circle color-cyan"></i> Custom Hardware Diagnostic</div>
-                        <div class="check-item"><i class="fas fa-check-circle color-cyan"></i> Tech Content & Tutorials</div>
-                    </div>
-                </div>
-
-                <div class="cards-stack">
-                    <div class="card flex-align gap-4 hover-lift">
-                        <div class="icon-box icon-cyan"><i class="fas fa-microchip"></i></div>
-                        <div>
-                            <h3 class="card-title">Tech & PC Hardware</h3>
-                            <p class="card-desc">Assembly, Diagnostics & Hardware QA</p>
-                        </div>
-                    </div>
-
-                    <div class="card flex-align gap-4 hover-lift">
-                        <div class="icon-box icon-teal"><i class="fab fa-youtube"></i></div>
-                        <div>
-                            <h3 class="card-title">YouTube Content Creation</h3>
-                            <p class="card-desc">Tech Guides, Reviews & Hardware Tutorials</p>
-                        </div>
-                    </div>
-
-                    <div class="card flex-align gap-4 hover-lift">
-                        <div class="icon-box icon-indigo"><i class="fas fa-brain"></i></div>
-                        <div>
-                            <h3 class="card-title">Psychology Foundation</h3>
-                            <p class="card-desc">Behavioral Analysis & Team Workflows</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">Bridging quality management, psychology, and technology</p>
+      <div class="glass-card">
+        <p>I am a Quality Assurance Officer specializing in Household and Personal Care (HHPC) manufacturing environments. My daily work involves strict In-Process Quality Control (IPQC), inspection workflows, safety protocols, and operational compliance.</p>
+        <p style="margin-top: 1rem;">With an academic background in Psychology (B.Sc. & M.Sc.), I bring strong analytical thinking, problem-solving, and attention to detail. Beyond QA, I actively explore web technologies, JavaScript programming, hardware setup optimization, and tech content creation.</p>
+      </div>
     </section>
 
-    <section id="experience" class="section bg-alt">
-        <div class="container">
-            <div class="section-tag">
-                <span class="tag-line"></span>
-                <span class="tag-text">Career Pathway</span>
-            </div>
-            <h2 class="section-title">Work Experience</h2>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
-                    <div class="card" style="width: 100%;">
-                        <div class="flex-between">
-                            <div>
-                                <h3 class="card-title">Quality Assurance Officer (QA / IPQC)</h3>
-                                <p class="card-institution">HHPC Manufacturing Division</p>
-                            </div>
-                            <span class="chip">Present</span>
-                        </div>
-                        <p class="card-desc mt-4">
-                            Responsible for enforcing quality compliance across Household & Personal Care (HHPC) manufacturing lines. Ensuring products meet standard specifications through rigorous In-Process Quality Control (IPQC).
-                        </p>
-                        <ul class="bullet-list mt-4">
-                            <li>Perform raw material, in-process, and finished product inspection according to SOP guidelines.</li>
-                            <li>Document non-conformance reports, root-cause analysis, and recommend corrective actions.</li>
-                            <li>Collaborate with production teams to streamline manufacturing quality and reduce defect rates.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot dot-teal"><i class="fas fa-desktop"></i></div>
-                    <div class="card" style="width: 100%;">
-                        <div class="flex-between">
-                            <div>
-                                <h3 class="card-title">Technical Support Specialist & PC Hardware Tech</h3>
-                                <p class="card-institution" style="color: var(--teal-accent);">Independent / Tech Consulting</p>
-                            </div>
-                            <span class="chip" style="background: rgba(45, 212, 191, 0.15); color: var(--teal-accent);">Ongoing</span>
-                        </div>
-                        <p class="card-desc mt-4">
-                            Providing hardware diagnostics, custom PC assembly, software setup, and technical troubleshooting for personal users and small teams.
-                        </p>
-                        <ul class="bullet-list mt-4">
-                            <li>Custom PC building, hardware compatibility checks, and performance benchmarking.</li>
-                            <li>Diagnosing hardware faults (RAM, Storage, GPU, Power Supply, Thermal Throttling).</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2 class="section-title">Work Experience</h2>
+      <p class="section-subtitle">My professional journey in quality control and process auditing</p>
+      <div class="timeline">
+        <div class="glass-card">
+          <span class="badge">Current Position</span>
+          <h3 style="font-size: 1.25rem; font-weight: 700;">Quality Assurance Officer</h3>
+          <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">HHPC Production Facility</p>
+          <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.95rem;">
+            <li>Lead In-Process Quality Control (IPQC) for household detergents, glass cleaners, and handwash products.</li>
+            <li>Execute multi-stage quality inspections covering raw material dispensing to terminal packaging.</li>
+            <li>Implement risk analysis, root-cause assessments, and batch compliance documentation.</li>
+          </ul>
         </div>
+      </div>
     </section>
 
-    <section id="education" class="section">
-        <div class="container">
-            <div class="section-tag">
-                <span class="tag-line"></span>
-                <span class="tag-text">Academic Qualifications</span>
-            </div>
-            <h2 class="section-title">Education</h2>
-
-            <div class="grid grid-2">
-                <div class="card hover-glow">
-                    <div class="icon-box icon-cyan mb-4"><i class="fas fa-graduation-cap"></i></div>
-                    <span class="card-subtitle color-cyan">Postgraduate Degree</span>
-                    <h3 class="card-title mt-2">Master's Degree in Psychology</h3>
-                    <p class="card-institution">National University / University College</p>
-                    <p class="card-desc mt-4">
-                        Focused on advanced psychological methodologies, organizational behavior, data interpretation, and human factor analysis.
-                    </p>
-                </div>
-
-                <div class="card hover-glow">
-                    <div class="icon-box icon-teal mb-4"><i class="fas fa-university"></i></div>
-                    <span class="card-subtitle color-teal">Undergraduate Degree</span>
-                    <h3 class="card-title mt-2">Bachelor's Degree (Honors) in Psychology</h3>
-                    <p class="card-institution" style="color: var(--teal-accent);">National University / University College</p>
-                    <p class="card-desc mt-4">
-                        Comprehensive education in general psychology, research methods, psychological assessment, and critical analytical thinking.
-                    </p>
-                </div>
-            </div>
+    <!-- Education Section -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <p class="section-subtitle">Academic background and qualifications</p>
+      <div class="grid-2">
+        <div class="glass-card">
+          <i class="fa-solid fa-graduation-cap" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i>
+          <h3>Master of Science (M.Sc.) in Psychology</h3>
+          <p style="color: var(--text-muted); margin-top: 0.5rem;">Comprehensive research focus on behavioral analytics, methodology, and organizational psychology.</p>
         </div>
+        <div class="glass-card">
+          <i class="fa-solid fa-user-graduate" style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+          <h3>Bachelor of Science (B.Sc.) in Psychology</h3>
+          <p style="color: var(--text-muted); margin-top: 0.5rem;">Core foundation in psychological theories, experimental design, and quantitative data collection.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="skills" class="section bg-alt">
-        <div class="container">
-            <div class="section-tag">
-                <span class="tag-line"></span>
-                <span class="tag-text">Capabilities</span>
-            </div>
-            <h2 class="section-title">Skills & Expertise</h2>
-
-            <div class="grid grid-4 gap-4">
-                <div class="skill-card">
-                    <i class="fas fa-check-double color-cyan"></i>
-                    <div>
-                        <span class="skill-name">IPQC Inspection</span>
-                        <span class="skill-desc">In-Process Control</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fas fa-pump-soap color-cyan"></i>
-                    <div>
-                        <span class="skill-name">HHPC Manufacturing</span>
-                        <span class="skill-desc">Personal & Home Care</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fas fa-clipboard-check color-cyan"></i>
-                    <div>
-                        <span class="skill-name">QMS & SOP Compliance</span>
-                        <span class="skill-desc">Quality Management</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fas fa-bug color-cyan"></i>
-                    <div>
-                        <span class="skill-name">Defect Root Analysis</span>
-                        <span class="skill-desc">Cause Identification</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fas fa-microchip color-teal"></i>
-                    <div>
-                        <span class="skill-name">Custom PC Building</span>
-                        <span class="skill-desc">Hardware Assembly</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fas fa-tools color-teal"></i>
-                    <div>
-                        <span class="skill-name">Hardware Diagnostics</span>
-                        <span class="skill-desc">System Benchmarking</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fab fa-github color-indigo"></i>
-                    <div>
-                        <span class="skill-name">Git & GitHub</span>
-                        <span class="skill-desc">Version Control</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fas fa-video color-indigo"></i>
-                    <div>
-                        <span class="skill-name">Video Production</span>
-                        <span class="skill-desc">Technical Content</span>
-                    </div>
-                </div>
-            </div>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <p class="section-subtitle">Technical skills, QA competencies, and tools</p>
+      <div class="grid-3">
+        <div class="glass-card">
+          <h3 style="margin-bottom: 0.75rem;"><i class="fa-solid fa-vial" style="color: var(--primary);"></i> QA & Manufacturing</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">IPQC Protocols</span>
+            <span class="skill-tag">Batch Inspection</span>
+            <span class="skill-tag">Risk Assessment</span>
+            <span class="skill-tag">HHPC Compliance</span>
+            <span class="skill-tag">Process Auditing</span>
+          </div>
         </div>
+
+        <div class="glass-card">
+          <h3 style="margin-bottom: 0.75rem;"><i class="fa-solid fa-code" style="color: var(--secondary);"></i> Web Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3 / Flexbox / Grid</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 style="margin-bottom: 0.75rem;"><i class="fa-solid fa-screwdriver-wrench" style="color: var(--primary);"></i> Tech & Hardware</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PC Hardware & Tuning</span>
+            <span class="skill-tag">Network Optimization</span>
+            <span class="skill-tag">Video Editing</span>
+            <span class="skill-tag">Content Creation</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <div class="flex-between flex-wrap gap-4 mb-8">
-                <div>
-                    <div class="section-tag">
-                        <span class="tag-line"></span>
-                        <span class="tag-text">Portfolio Showcase</span>
-                    </div>
-                    <h2 class="section-title" style="margin-bottom: 0;">GitHub Repositories & Highlights</h2>
-                </div>
-                <a href="https://github.com" target="_blank" rel="noopener" class="link-cyan">
-                    View All Repositories <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Feel free to reach out for collaborations or inquiries</p>
+      
+      <div class="glass-card" style="max-width: 600px; margin: 0 auto;">
+        <form action="https://formsubmit.co/findashraful.alam50@gmail.com" method="POST" class="contact-form">
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </div>
 
-            <div class="grid grid-3 gap-6">
-                <div class="card project-card">
-                    <div>
-                        <div class="flex-between mb-4">
-                            <div class="icon-box icon-cyan"><i class="fas fa-folder-open"></i></div>
-                            <div class="font-mono text-sm color-muted"><i class="far fa-star"></i> 12</div>
-                        </div>
-                        <h3 class="project-title">QA-SOP-Checklists</h3>
-                        <p class="card-desc mt-2">
-                            A curated repository of HHPC Quality Assurance templates, IPQC inspection sheets, and standard operating procedures.
-                        </p>
-                    </div>
-                    <div class="mt-6">
-                        <div class="tags-row mb-4">
-                            <span class="tag">QMS</span>
-                            <span class="tag">IPQC</span>
-                            <span class="tag">Docs</span>
-                        </div>
-                        <a href="https://github.com" target="_blank" rel="noopener" class="project-link">
-                            View Repository <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
 
-                <div class="card project-card">
-                    <div>
-                        <div class="flex-between mb-4">
-                            <div class="icon-box icon-teal"><i class="fas fa-laptop-code"></i></div>
-                            <div class="font-mono text-sm color-muted"><i class="far fa-star"></i> 18</div>
-                        </div>
-                        <h3 class="project-title">Hardware-Diagnostics-Guide</h3>
-                        <p class="card-desc mt-2">
-                            Step-by-step troubleshooting workflow for PC hardware errors, thermal benchmarking, and system diagnostics.
-                        </p>
-                    </div>
-                    <div class="mt-6">
-                        <div class="tags-row mb-4">
-                            <span class="tag">Hardware</span>
-                            <span class="tag">PC Build</span>
-                            <span class="tag">Guide</span>
-                        </div>
-                        <a href="https://github.com" target="_blank" rel="noopener" class="project-link">
-                            View Repository <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
 
-                <div class="card project-card">
-                    <div>
-                        <div class="flex-between mb-4">
-                            <div class="icon-box icon-indigo"><i class="fab fa-youtube"></i></div>
-                            <div class="font-mono text-sm color-muted"><i class="far fa-star"></i> 25</div>
-                        </div>
-                        <h3 class="project-title">Tech-Content-Hub</h3>
-                        <p class="card-desc mt-2">
-                            A repository housing technical video scripts, hardware review assets, and tutorial outlines for tech enthusiasts.
-                        </p>
-                    </div>
-                    <div class="mt-6">
-                        <div class="tags-row mb-4">
-                            <span class="tag">Media</span>
-                            <span class="tag">YouTube</span>
-                            <span class="tag">Tech</span>
-                        </div>
-                        <a href="https://github.com" target="_blank" rel="noopener" class="project-link">
-                            View Repository <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
     </section>
+  </main>
 
-    <section id="contact" class="section bg-alt text-center">
-        <div class="container container-narrow">
-            <div class="badge mb-4">Let's Connect</div>
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="hero-subtitle mx-auto">
-                Whether you have questions about Quality Control standardizations, PC tech recommendations, or prospective collaborations, feel free to drop a message!
-            </p>
+  <!-- Go To Top Button -->
+  <button id="goToTopBtn" aria-label="Go to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
-            <div class="card text-left mt-8">
-                <!-- FormSubmit Integration targeting findashraful.alam50@gmail.com -->
-                <form action="https://formsubmit.co/findashraful.alam50@gmail.com" method="POST" class="form-grid">
-                    <!-- FormSubmit Configuration Hidden Fields -->
-                    <input type="hidden" name="_subject" value="New Portfolio Contact Message!">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_captcha" value="false">
+  <footer>
+    <p>&copy; 2026 Ashraful Alam. All rights reserved.</p>
+  </footer>
 
-                    <div class="grid grid-2 gap-4">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required placeholder="John Doe" class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required placeholder="john@example.com" class="form-input">
-                        </div>
-                    </div>
-                    <div class="form-group mt-4">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" required placeholder="How can I help you?" class="form-input"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-gradient btn-full mt-6">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container flex-between flex-wrap gap-4">
-            <p>© 2026 Md. Ashraful Alam. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Go To Top Button -->
-    <button id="goTopBtn" class="go-top-btn" aria-label="Scroll to top of page">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- External JavaScript -->
-    <script src="script.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
