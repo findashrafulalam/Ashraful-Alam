@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Md. Ashraful Alam | Portfolio & QA Specialist</title>
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom External CSS -->
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header Navigation -->
     <header class="header">
         <nav class="nav-container">
             <a href="#hero" class="brand flex-align">
-                <div class="brand-logo">AA</div>
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" 
+                     alt="Md. Ashraful Alam Profile Logo" 
+                     class="brand-logo-img"
+                     onerror="this.onerror=null; this.src='https://placehold.co/100x100/0284c7/ffffff?text=AA';">
                 <div class="brand-info">
                     <span class="brand-name">Md. Ashraful Alam</span>
                     <span class="brand-title">QA Specialist & Tech Enthusiast</span>
@@ -36,6 +41,11 @@
             </div>
 
             <div class="header-actions">
+                <!-- Dark / Light Mode Switch Button -->
+                <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i id="themeIcon" class="fas fa-sun"></i>
+                </button>
+
                 <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm flex-align">
                     <i class="fab fa-github"></i>
                     <span>GitHub Profile</span>
@@ -44,7 +54,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="hero" class="hero-section">
         <div class="hero-bg-glow glow-1"></div>
         <div class="hero-bg-glow glow-2"></div>
@@ -93,7 +102,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <div class="section-tag">
@@ -103,7 +111,7 @@
             <h2 class="section-title">About Me</h2>
 
             <div class="grid grid-2">
-                <div class="card glass-card leading-relaxed">
+                <div class="card leading-relaxed">
                     <p>
                         Hello! I am <strong>Md. Ashraful Alam</strong>, a dedicated Quality Assurance & Control professional working in Household & Personal Care (HHPC) manufacturing. My daily focus revolves around implementing strict Quality Management Systems (QMS), executing In-Process Quality Control (IPQC), and maintaining standard operating procedures (SOP).
                     </p>
@@ -123,7 +131,7 @@
                 </div>
 
                 <div class="cards-stack">
-                    <div class="card glass-card flex-align gap-4 hover-lift">
+                    <div class="card flex-align gap-4 hover-lift">
                         <div class="icon-box icon-cyan"><i class="fas fa-microchip"></i></div>
                         <div>
                             <h3 class="card-title">Tech & PC Hardware</h3>
@@ -131,7 +139,7 @@
                         </div>
                     </div>
 
-                    <div class="card glass-card flex-align gap-4 hover-lift">
+                    <div class="card flex-align gap-4 hover-lift">
                         <div class="icon-box icon-teal"><i class="fab fa-youtube"></i></div>
                         <div>
                             <h3 class="card-title">YouTube Content Creation</h3>
@@ -139,7 +147,7 @@
                         </div>
                     </div>
 
-                    <div class="card glass-card flex-align gap-4 hover-lift">
+                    <div class="card flex-align gap-4 hover-lift">
                         <div class="icon-box icon-indigo"><i class="fas fa-brain"></i></div>
                         <div>
                             <h3 class="card-title">Psychology Foundation</h3>
@@ -151,7 +159,6 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="section bg-alt">
         <div class="container">
             <div class="section-tag">
@@ -163,11 +170,11 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
-                    <div class="card glass-card">
+                    <div class="card" style="width: 100%;">
                         <div class="flex-between">
                             <div>
-                                <h3 class="timeline-title">Quality Assurance Officer (QA / IPQC)</h3>
-                                <p class="timeline-subtitle color-cyan">HHPC Manufacturing Division</p>
+                                <h3 class="card-title">Quality Assurance Officer (QA / IPQC)</h3>
+                                <p class="card-institution">HHPC Manufacturing Division</p>
                             </div>
                             <span class="chip">Present</span>
                         </div>
@@ -184,13 +191,13 @@
 
                 <div class="timeline-item">
                     <div class="timeline-dot dot-teal"><i class="fas fa-desktop"></i></div>
-                    <div class="card glass-card">
+                    <div class="card" style="width: 100%;">
                         <div class="flex-between">
                             <div>
-                                <h3 class="timeline-title">Technical Support Specialist & PC Hardware Tech</h3>
-                                <p class="timeline-subtitle color-teal">Independent / Tech Consulting</p>
+                                <h3 class="card-title">Technical Support Specialist & PC Hardware Tech</h3>
+                                <p class="card-institution" style="color: var(--teal-accent);">Independent / Tech Consulting</p>
                             </div>
-                            <span class="chip">Ongoing</span>
+                            <span class="chip" style="background: rgba(45, 212, 191, 0.15); color: var(--teal-accent);">Ongoing</span>
                         </div>
                         <p class="card-desc mt-4">
                             Providing hardware diagnostics, custom PC assembly, software setup, and technical troubleshooting for personal users and small teams.
@@ -205,7 +212,6 @@
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education" class="section">
         <div class="container">
             <div class="section-tag">
@@ -215,7 +221,7 @@
             <h2 class="section-title">Education</h2>
 
             <div class="grid grid-2">
-                <div class="card glass-card hover-glow">
+                <div class="card hover-glow">
                     <div class="icon-box icon-cyan mb-4"><i class="fas fa-graduation-cap"></i></div>
                     <span class="card-subtitle color-cyan">Postgraduate Degree</span>
                     <h3 class="card-title mt-2">Master's Degree in Psychology</h3>
@@ -225,11 +231,11 @@
                     </p>
                 </div>
 
-                <div class="card glass-card hover-glow">
+                <div class="card hover-glow">
                     <div class="icon-box icon-teal mb-4"><i class="fas fa-university"></i></div>
                     <span class="card-subtitle color-teal">Undergraduate Degree</span>
                     <h3 class="card-title mt-2">Bachelor's Degree (Honors) in Psychology</h3>
-                    <p class="card-institution">National University / University College</p>
+                    <p class="card-institution" style="color: var(--teal-accent);">National University / University College</p>
                     <p class="card-desc mt-4">
                         Comprehensive education in general psychology, research methods, psychological assessment, and critical analytical thinking.
                     </p>
@@ -238,7 +244,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section bg-alt">
         <div class="container">
             <div class="section-tag">
@@ -315,7 +320,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
             <div class="flex-between flex-wrap gap-4 mb-8">
@@ -324,7 +328,7 @@
                         <span class="tag-line"></span>
                         <span class="tag-text">Portfolio Showcase</span>
                     </div>
-                    <h2 class="section-title">GitHub Repositories & Highlights</h2>
+                    <h2 class="section-title" style="margin-bottom: 0;">GitHub Repositories & Highlights</h2>
                 </div>
                 <a href="https://github.com" target="_blank" rel="noopener" class="link-cyan">
                     View All Repositories <i class="fas fa-external-link-alt"></i>
@@ -332,7 +336,7 @@
             </div>
 
             <div class="grid grid-3 gap-6">
-                <div class="card glass-card project-card">
+                <div class="card project-card">
                     <div>
                         <div class="flex-between mb-4">
                             <div class="icon-box icon-cyan"><i class="fas fa-folder-open"></i></div>
@@ -355,7 +359,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card project-card">
                     <div>
                         <div class="flex-between mb-4">
                             <div class="icon-box icon-teal"><i class="fas fa-laptop-code"></i></div>
@@ -366,7 +370,7 @@
                             Step-by-step troubleshooting workflow for PC hardware errors, thermal benchmarking, and system diagnostics.
                         </p>
                     </div>
-                    <div>
+                    <div class="mt-6">
                         <div class="tags-row mb-4">
                             <span class="tag">Hardware</span>
                             <span class="tag">PC Build</span>
@@ -378,7 +382,7 @@
                     </div>
                 </div>
 
-                <div class="card glass-card project-card">
+                <div class="card project-card">
                     <div>
                         <div class="flex-between mb-4">
                             <div class="icon-box icon-indigo"><i class="fab fa-youtube"></i></div>
@@ -389,7 +393,7 @@
                             A repository housing technical video scripts, hardware review assets, and tutorial outlines for tech enthusiasts.
                         </p>
                     </div>
-                    <div>
+                    <div class="mt-6">
                         <div class="tags-row mb-4">
                             <span class="tag">Media</span>
                             <span class="tag">YouTube</span>
@@ -404,7 +408,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section bg-alt text-center">
         <div class="container container-narrow">
             <div class="badge mb-4">Let's Connect</div>
@@ -413,21 +416,27 @@
                 Whether you have questions about Quality Control standardizations, PC tech recommendations, or prospective collaborations, feel free to drop a message!
             </p>
 
-            <div class="card glass-card text-left mt-8">
-                <form class="form-grid">
+            <div class="card text-left mt-8">
+                <!-- FormSubmit Integration targeting findashraful.alam50@gmail.com -->
+                <form action="https://formsubmit.co/findashraful.alam50@gmail.com" method="POST" class="form-grid">
+                    <!-- FormSubmit Configuration Hidden Fields -->
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message!">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+
                     <div class="grid grid-2 gap-4">
                         <div class="form-group">
                             <label for="name">Your Name</label>
-                            <input type="text" id="name" required placeholder="John Doe" class="form-input">
+                            <input type="text" id="name" name="name" required placeholder="John Doe" class="form-input">
                         </div>
                         <div class="form-group">
                             <label for="email">Your Email</label>
-                            <input type="email" id="email" required placeholder="john@example.com" class="form-input">
+                            <input type="email" id="email" name="email" required placeholder="john@example.com" class="form-input">
                         </div>
                     </div>
                     <div class="form-group mt-4">
                         <label for="message">Message</label>
-                        <textarea id="message" rows="4" required placeholder="How can I help you?" class="form-input"></textarea>
+                        <textarea id="message" name="message" rows="4" required placeholder="How can I help you?" class="form-input"></textarea>
                     </div>
                     <button type="submit" class="btn btn-gradient btn-full mt-6">
                         <i class="fas fa-paper-plane"></i> Send Message
@@ -437,7 +446,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container flex-between flex-wrap gap-4">
             <p>© 2026 Md. Ashraful Alam. All rights reserved.</p>
@@ -449,5 +457,12 @@
         </div>
     </footer>
 
+    <!-- Go To Top Button -->
+    <button id="goTopBtn" class="go-top-btn" aria-label="Scroll to top of page">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
